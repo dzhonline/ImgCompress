@@ -2,7 +2,6 @@ package utils;
 
 import net.coobird.thumbnailator.Thumbnails;
 
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -11,6 +10,11 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author dzh
+ * @date 2020-4-20
+ * @email dzhonline@163.com
+ */
 public class ImgCompressUtils {
     /**
      * 图片压缩工具
@@ -84,8 +88,8 @@ public class ImgCompressUtils {
      * @param size     指定压缩大小(kb)
      * @param flat     是否需要进行尺寸压缩
      * @param maxLenth 尺寸压缩最长边不超过
-     * @throws IOException
      * @return
+     * @throws IOException
      */
     public static long urlCompression(URL url, String local, String fileName, float size, Boolean flat, int maxLenth) throws Exception {
         Map compression = new HashMap();
